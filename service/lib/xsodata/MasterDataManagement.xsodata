@@ -1,0 +1,24 @@
+service {
+    //车辆
+	"DrivingSafety.VEHICLE"
+	    as "Vehicle"
+	    navigates (
+			"VEHICLE_REF_FEE" as "Fee"
+    	);
+	association "VEHICLE_REF_FEE" principal "Vehicle"("UID") multiplicity "1" dependent "Fee"("REF_VEHICLE.UID") multiplicity "*";
+
+	//车辆服务费表
+	"FEE_VIEW" as "Fee"
+		key ("UID")
+		navigates ("FEE_REF_VEHICLE" as "Vehicle")
+		create using "xsjs.masterdata:fee.xsjslib::fee_create_using"
+		delete using "xsjs.masterdata:fee.xsjslib::fee_delete_using"
+		update using "xsjs.masterdata:fee.xsjslib::fee_update_using";
+	association "FEE_REF_VEHICLE" principal  "Fee"("REF_VEHICLE.UID") multiplicity "1" dependent "Vehicle"("UID")  multiplicity "1";
+
+	
+}
+settings {
+	support null;
+    metadata cache-control "max-age= 604800";
+}

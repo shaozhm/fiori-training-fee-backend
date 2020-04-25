@@ -1,0 +1,15 @@
+{
+    "hana": {
+      "user": "E5EC1211935047C49D62397BA22CB139_9RU54HC5VJ2E67ZDHG1IFOBU2_RT",
+      "password": "To83CTnUTTOm7AybNjQtZ7_b3pnEPAkgaLsiguCrVn94rIAcirUimQQDkEq3c8WbudGcB-PI9txD1iXqykxXodH.povC1Oa7Q-dCKl5ElqNecgo-EEY4bQO4svWDTxWv",
+      "host": "pvgl50828334a",
+      "port": "30213",
+      "schema": "E5EC1211935047C49D62397BA22CB139"
+    },
+    "uaa": {
+      "clientid": "sb-sdrive!t72",
+      "clientsecret": "spatEDGwXK7Ecn+NyGTaRAVpOl4=",
+      "url": "https://reiot.authentication.canaryac.vlab-sapcloudplatformdev.cn",
+      "xsappname": "sdrive!t72"
+    }
+}
