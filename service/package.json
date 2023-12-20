@@ -3,7 +3,7 @@
     "@sap/fibers": "^2.0.2-0",
     "@sap/xsenv": "2.0.0",
     "@sap/xsjs": "3.3.7",
-    "@sap/xssec": "2.1.16"
+    "@sap/xssec": "3.6.0"
   },
   "devDependencies": {
     "@sap/xsjs-test": "2.0.16"
